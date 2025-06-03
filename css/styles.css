@@ -329,26 +329,58 @@ input:checked + .switch-plate .switch-handle {
 .project-links {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
 }
 
 .btn {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    font-weight: 600;
     text-decoration: none;
-    transition: var(--transition);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn i {
+    font-size: 1.1rem;
 }
 
 .btn-primary {
-    background: var(--primary-color);
+    background-color: var(--primary-color);
     color: white;
 }
 
 .btn-primary:hover {
-    background: darken(var(--primary-color), 10%);
+    background-color: #357abd;
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
+}
+
+.btn-secondary {
+    background-color: #E1306C;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #c62d63;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(225, 48, 108, 0.2);
+}
+
+.btn-accent {
+    background-color: #000000;
+    color: white;
+}
+
+.btn-accent:hover {
+    background-color: #333333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Certifications Grid */
