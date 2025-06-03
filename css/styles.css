@@ -111,24 +111,25 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #2196F3;
-    transition: var(--transition);
-    border-radius: 15px;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
 }
 
 .switch-handle {
     position: absolute;
+    content: "";
     height: 26px;
     width: 26px;
     left: 2px;
     bottom: 2px;
     background-color: white;
-    transition: var(--transition);
+    transition: .4s;
     border-radius: 50%;
 }
 
 input:checked + .switch-plate {
-    background-color: #666;
+    background-color: var(--primary-color);
 }
 
 input:checked + .switch-plate .switch-handle {

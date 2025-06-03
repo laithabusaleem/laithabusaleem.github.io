@@ -13,8 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const theme = themeToggle.checked ? 'dark' : 'light';
         body.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
-            localStorage.setItem('theme', 'light-theme');
-        }
     });
 
     // Mobile menu functionality
