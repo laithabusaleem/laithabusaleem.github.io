@@ -10,8 +10,7 @@
     --transition: all 0.3s ease;
 }
 
-/* Dark Theme Colors */
-body.dark-theme {
+[data-theme="dark"] {
     --primary-color: #64b5f6;
     --text-primary: #ffffff;
     --text-secondary: #b0b0b0;

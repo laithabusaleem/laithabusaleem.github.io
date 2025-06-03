@@ -6,19 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Check for saved theme preference
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
-        body.classList.add(savedTheme);
-        themeToggle.checked = savedTheme === 'dark-theme';
-    }
-
-    // Theme switch handler
+        body.setAttribute('data-theme', savedTheme);
+        themeToggle.checked = savedTheme === 'dark';
+    }    // Theme switch handler
     themeToggle.addEventListener('change', () => {
-        if (themeToggle.checked) {
-            body.classList.remove('light-theme');
-            body.classList.add('dark-theme');
-            localStorage.setItem('theme', 'dark-theme');
-        } else {
-            body.classList.remove('dark-theme');
-            body.classList.add('light-theme');
+        const theme = themeToggle.checked ? 'dark' : 'light';
+        body.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
             localStorage.setItem('theme', 'light-theme');
         }
     });
